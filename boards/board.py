@@ -26,3 +26,6 @@ class Board:
 
     def is_alive(self):
         return self.alive
+
+    def to_np(self):
+        pass

@@ -1,3 +1,5 @@
+import numpy as np
+
 from boards.board import Board
 
 
@@ -54,3 +56,6 @@ class WrapAroundQuad(Board):
                 output += " "
             output += "\n"
         print(output)
+
+    def to_np(self):
+        return np.array(self.board)
