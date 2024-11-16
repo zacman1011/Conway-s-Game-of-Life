@@ -8,7 +8,7 @@ def display(gol, interval=500):
     fig, ax = plt.subplots()
     img = ax.imshow(grid, interpolation='nearest')
 
-    ani = animation.FuncAnimation(fig, gol.tick, fargs=(img,), frames=None, interval=interval)
+    _ani = animation.FuncAnimation(fig, gol.tick, fargs=(img,), frames=None, interval=interval)
 
     plt.axis('off')
     plt.show()

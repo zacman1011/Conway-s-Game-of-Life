@@ -5,7 +5,7 @@ from boards.board import Board
 
 class PaddedQuad(Board):
 
-    def __init__(self, seed_coords, h, w, rules=None, padding=0):
+    def __init__(self, seed_coords, h=50, w=50, rules=None, padding=0):
         super().__init__(seed_coords, rules)
         self.h = h
         self.w = w

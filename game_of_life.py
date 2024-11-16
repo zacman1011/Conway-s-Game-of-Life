@@ -18,11 +18,10 @@ class GameOfLife:
         if frame_num >= self.max_ticks:
             return img
 
-        print(f"Frame number {frame_num}")
         self.board.tick()
         self.alive = self.board.is_alive()
         self.full_circle = self.full_circle or self.board.board == self.start_board
 
         if img is not None:
             img.set_data(self.board.to_np())
-            return img
+        return img
