@@ -1,7 +1,7 @@
 from boards.infinite_board import InfiniteBoard
 from boards.padded_quad import PaddedQuad
 from boards.wrap_around_quad import WrapAroundQuad
-from display.graphic import display
+from display.console import display
 from game_of_life import GameOfLife
 from rules.conways import Conways
 from rules.herd import Herd
@@ -99,5 +99,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-

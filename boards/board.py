@@ -8,14 +8,11 @@ class Board:
             rules = Conways()
 
         self.seed_coords = seed_coords
+        self.rules = rules
         self.alive = True
         self.board = None
-        self.rules = rules
 
     def generate_board(self):
-        pass
-
-    def print_board(self):
         pass
 
     def tick(self):
@@ -26,6 +23,9 @@ class Board:
 
     def is_alive(self):
         return self.alive
+
+    def print_board(self):
+        pass
 
     def to_np(self):
         pass

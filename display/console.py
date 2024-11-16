@@ -3,7 +3,8 @@ import time
 barrier = "----------------------------------\n"
 
 
-def display(gol, max_ticks=10, sleep=0.5):
+def display(gol, max_ticks=10, interval=500):
+    sleep = interval / 1000
     ticks = 0
 
     print("Initial Board")
